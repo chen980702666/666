@@ -1,4 +1,4 @@
-name: Deploy GitHub Pages
+name: Deploy static HTML to GitHub Pages
 
 on:
   push:
@@ -21,13 +21,13 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Upload artifact
+      - name: Upload static site
         uses: actions/upload-pages-artifact@v2
         with:
           path: .  # 這裡是你要部署的資料夾，通常是根目錄
