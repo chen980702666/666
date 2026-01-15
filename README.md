@@ -1,7 +1,7 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>新增很多 67 + 擬真棒 + 跳轉</title>
+  <title>執著來財</title>
   <style>
     body {
       font-family: sans-serif;
